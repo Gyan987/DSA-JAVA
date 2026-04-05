@@ -1,0 +1,11 @@
+class pro2 {
+    public int[] buildArray(int[] nums) {
+        int n=nums.length;
+        int i;
+        int[] ans=new int[n];
+        for(i=0;i<n;i++){
+            ans[i]=nums[nums[i]];
+        }
+        return ans;
+    }
+}
