@@ -1,11 +1,21 @@
 //search in the array:return the index if item found else return -1
 
-
+import java.util.*;
 public class V13Linear {
     public static void main(String[] args){
-        int[] num = {2,3,4,5,1,2,8,19,-3,16,-11,28};
+        Scanner sc=new Scanner(System.in);
+        int[] num;
+        System.out.print("Enter the size of the array :");
+        int size =sc.nextInt();
+        num=new int[size];
+        System.out.println("Enter the array ELements :");
+        for(int i=0;i<size;i++){
+            num[i]=sc.nextInt();
+        }
 
-        int target =19;
+        int target;
+        System.out.print("Enter the target element :");
+        target=sc.nextInt();
         int ans=linearsearch(num,target);//function call .
         System.out.println("Index of the target element " + target + " is: " + ans);
     }
